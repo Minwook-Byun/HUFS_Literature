@@ -111,10 +111,8 @@ export default function Header() {
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-5xl">
-                <span className="block xl:inline">외대문학회</span>
-                <span className="block text-indigo-600 xl:inline">
-                  신입 회원모집
-                </span>
+                <strong className="block xl:inline">외대문학회</strong>
+                <p className="block text-indigo-600 xl:inline">신입 회원모집</p>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 저희는 읽고, 쓰기 위해서 모입니다. 문 두드려주세요
