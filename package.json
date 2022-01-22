@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "create-react-app": "^5.0.0"
+    "create-react-app": "^5.0.0",
+    "styled-component": "^2.8.0"
   }
 }
