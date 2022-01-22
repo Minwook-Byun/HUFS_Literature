@@ -1,11 +1,12 @@
 import Header from "./components/Header";
-import Contact from "./components/Contact";
+import Introduc from "./components/Introduc";
+// import Contact from "./components/Contact";
 
 function App() {
   return (
     <div>
       <Header />
-
+      <Introduc />
       <p style={{ fontSize: "20px", textAlign: "center", marginTop: "30px" }}>
         아직 개발 중인 영역입니다 🚧
       </p>
