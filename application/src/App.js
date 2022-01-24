@@ -1,8 +1,10 @@
+import React from 'react';
 import Header from './components/Header';
 import Introduc from './components/Introduc';
 import FixedModal from './components/FixedModal';
 import ImageSlider from './components/ImageSlider';
 import { SliderData } from './components/SliderData';
+import Contact from './components/Contact';
 
 function App() {
   return (

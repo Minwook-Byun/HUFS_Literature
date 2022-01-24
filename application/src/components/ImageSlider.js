@@ -20,28 +20,36 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <div
-      name="slider"
-      className="relative flex h-20 justify-center align-center"
-    >
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === 현재이미지 ? 'slide active' : 'slide'}
-            key={index} // index 빼먹지 말고 써줍시다
-          >
-            {index === 현재이미지 && (
-              <img
-                className=" w-96 h-96 rounded-10 "
-                src={slide.img}
-                alt="지난 한 해 문학회에서 다뤘던 책"
-              ></img>
-            )}
-          </div>
-        );
-      })}
-      <FaLongArrowAltLeft className="btn-left" onClick={prevOnClicked} />
-      <FaLongArrowAltRight className="btn-right" onClick={nextOnClicked} />
+    <div className="block">
+      <div
+        name="slider"
+        className=" flex h-20 mb-5 justify-center align-center"
+      >
+        {SliderData.map((slide, index) => {
+          return (
+            <div
+              className={index === 현재이미지 ? 'slide active' : 'slide'}
+              key={index} // index 빼먹지 말고 써줍시다
+            >
+              {index === 현재이미지 && (
+                <img
+                  className=" absolute  w-96 h-96 rounded-10 "
+                  src={slide.img}
+                  alt="지난 한 해 문학회에서 다뤘던 책"
+                ></img>
+              )}
+            </div>
+          );
+        })}
+        <FaLongArrowAltLeft
+          className="relative z-2 t-5 r-2 w-10 h-10 text-xl"
+          onClick={prevOnClicked}
+        />
+        <FaLongArrowAltRight
+          className="relative z-2 t-5 r-6 w-10 h-10 text-xl"
+          onClick={nextOnClicked}
+        />
+      </div>
     </div>
   );
 };
