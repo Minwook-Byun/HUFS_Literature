@@ -6,12 +6,14 @@ function Introduc() {
         src="http://img.hani.co.kr/imgdb/resize/2018/0817/00502987_20180817.JPG"
         alt="외대 문학회 소개 이미지"
       />
-      <h3 className="text-right text-1xl mx-6 font-extrabold text-gray-900 sm:text-2xl md:text-3xl">
-        <strong className="hover:text-indigo-600">외대 문학회는</strong> 단순히
-        책을 읽는 <strong className="hover:text-indigo-600">동아리가</strong>
+      <h3 className="text-center text-1xl mx-6 font-extrabold text-gray-900 sm:text-2xl md:text-3xl">
+        <strong className="hover:text-indigo-600">외대 문학회는</strong> <br />
+        단순히 책을 읽는{' '}
+        <strong className="hover:text-indigo-600">동아리가</strong>
         아닙니다.
         <br />
-        함께 읽고 함께 쓰며 함께 문우로 자라나가요?
+        함께 읽고 함께 쓰며 함께
+        <br /> 문우로 자라나가요?
       </h3>
     </div>
   );

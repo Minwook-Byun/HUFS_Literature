@@ -1,7 +1,7 @@
 module.exports = {
-  content: ["./src.{html,js}"],
+  darkMode: 'class',
+  content: ['./src.{html,js}'],
   purge: [],
-  darkMode: false,
   theme: {
     extend: {},
   },
