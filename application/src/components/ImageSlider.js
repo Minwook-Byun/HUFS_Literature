@@ -20,11 +20,8 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <div className="block">
-      <div
-        name="slider"
-        className=" flex h-20 mb-5 justify-center align-center"
-      >
+    <div>
+      <div className="flex justify-center align-center my-10">
         {SliderData.map((slide, index) => {
           return (
             <div
@@ -33,7 +30,7 @@ const ImageSlider = ({ slides }) => {
             >
               {index === 현재이미지 && (
                 <img
-                  className=" absolute  w-96 h-96 rounded-10 "
+                  className=" object-cover h-56 mt-10  sm:h-full sm: w-96 md:h-full lg:w-96 lg:h-auto"
                   src={slide.img}
                   alt="지난 한 해 문학회에서 다뤘던 책"
                 ></img>
@@ -41,12 +38,15 @@ const ImageSlider = ({ slides }) => {
             </div>
           );
         })}
+      </div>
+      <div className="flex justify-center align-center mx-6 font-extrabold text-gray-900 sm:text-xl md:text-xl">
         <FaLongArrowAltLeft
-          className="relative z-2 t-5 r-2 w-10 h-10 text-xl"
+          className="mx-1 text-3xl hover:bg-sky-500 hover:text-white rounded-full"
           onClick={prevOnClicked}
         />
+        <p>양쪽 화살표로 넘겨보실 수 있습니다 </p>
         <FaLongArrowAltRight
-          className="relative z-2 t-5 r-6 w-10 h-10 text-xl"
+          className="mx-1 text-3xl hover:bg-sky-500 hover:text-white rounded-full"
           onClick={nextOnClicked}
         />
       </div>
