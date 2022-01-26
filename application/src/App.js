@@ -5,6 +5,7 @@ import FixedModal from './components/FixedModal';
 import ImageSlider from './components/ImageSlider';
 import { SliderData } from './components/SliderData';
 import Contact from './components/Contact';
+import DarkmodeSwitch from './components/Darkmode/DarkmodeSwitch';
 import Imsi from './components/Imsi';
 
 function App() {
