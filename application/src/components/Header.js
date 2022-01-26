@@ -1,12 +1,13 @@
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import DarkmodeSwitch from './Darkmode/DarkmodeSwitch';
 
 const navigation = [
-  { name: "소개", href: "#introduc" },
-  { name: "연혁", href: "#history" },
-  { name: "활동", href: "#activity" },
-  { name: "연락처", href: "#contact" },
+  { name: '소개', href: '#introduc' },
+  { name: '연혁', href: '#history' },
+  { name: '활동', href: '#activity' },
+  { name: '연락처', href: '#contact' },
 ];
 
 export default function Header() {
@@ -24,6 +25,7 @@ export default function Header() {
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
 
+          <DarkmodeSwitch />
           <Popover>
             <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
               <nav
