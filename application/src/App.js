@@ -6,6 +6,7 @@ import ImageSlider from './components/ImageSlider';
 import { SliderData } from './components/SliderData';
 import Contact from './components/Contact';
 import DarkmodeSwitch from './components/Darkmode/DarkmodeSwitch';
+import ThreeUI from './components/UI/ThreeUI';
 import Imsi from './components/Imsi';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div>
       <Header />
       <Introduc />
+      <ThreeUI />
       <ImageSlider slides={SliderData} />
       <Imsi />
       <FixedModal />
